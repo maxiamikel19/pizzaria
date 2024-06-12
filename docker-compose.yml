@@ -1,0 +1,12 @@
+version: '2.8'
+
+services:
+
+  db-pizzaria:
+    image: mysql
+    ports:
+      - '3306:3306'
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: pizzaria-db
